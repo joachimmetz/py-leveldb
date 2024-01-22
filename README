@@ -34,5 +34,10 @@ KeyError
 
 ---------------------
 
-Author: Arni Mar Jonsson (arnimarj@gmail.com) - http://code.google.com/p/leveldb/
+Author: Arni Mar Jonsson (arnimarj@gmail.com)
+
+References:
+* http://code.google.com/p/leveldb/
+* https://github.com/arnimarj/py-leveldb
+* https://github.com/rjpower/py-leveldb
 
