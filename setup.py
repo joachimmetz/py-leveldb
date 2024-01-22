@@ -43,34 +43,6 @@ else:
     sys.exit(1)
 
 setup(
-    name = 'leveldb',
-    version = '0.20',
-    maintainer = 'Arni Mar Jonsson',
-    maintainer_email = 'arnimarkj@gmail.com',
-    url = 'https://github.com/rjpower/py-leveldb',
-
-    classifiers = [
-        'Development Status :: 4 - Beta',
-        'Environment :: Other Environment',
-        'Intended Audience :: Developers',
-        'License :: OSI Approved :: BSD License',
-        'Operating System :: POSIX',
-        'Programming Language :: C++',
-        'Programming Language :: Python',
-        'Programming Language :: Python :: 2.4',
-        'Programming Language :: Python :: 2.5',
-        'Programming Language :: Python :: 2.6',
-        'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3.0',
-        'Programming Language :: Python :: 3.1',
-        'Programming Language :: Python :: 3.2',
-        'Programming Language :: Python :: 3.3',
-        'Topic :: Database',
-        'Topic :: Software Development :: Libraries'
-    ],
-
-    description = 'Python bindings for leveldb database library',
-
     ext_modules = [
         Extension('leveldb',
             sources = [
