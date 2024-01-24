@@ -90,7 +90,6 @@ setup(
                 'leveldb/util/logging.cc',
                 'leveldb/util/options.cc',
                 'leveldb/util/status.cc',
-                'leveldb/port/port_posix.cc',
 
                 # python stuff
                 'leveldb_ext.cc',
