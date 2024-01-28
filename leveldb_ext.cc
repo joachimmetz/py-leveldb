@@ -116,10 +116,11 @@ extern "C" void initleveldb(void)
 		Py_DECREF(leveldb_module);
 		INITERROR;
 	}
-
+#if PY_VERSION_HEX < 0x03070000
 	PyEval_InitThreads();
+#endif
 
-	#if PY_MAJOR_VERSION >= 3
+#if PY_MAJOR_VERSION >= 3
 	return leveldb_module;
-	#endif
+#endif
 }
