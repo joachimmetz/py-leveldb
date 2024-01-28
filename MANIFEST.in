@@ -1,3 +1,9 @@
+include *.cc
+include *.h
+include LICENSE
+include LICENSE.leveldb
+include LICENSE.snappy
+include leveldb.spec
 include leveldb/include/leveldb/*.h
 include leveldb/db/*.h
 include leveldb/table/*.h
@@ -8,8 +14,7 @@ include leveldb/table/*.cc
 include leveldb/util/*.cc
 include leveldb/port/*.cc
 include leveldb/*.cc
+include leveldb/AUTHORS
 include snappy/*.h
 include snappy/*.cc
-include *.cc
-include *.h
-include LICENSE
+include snappy/AUTHORS
