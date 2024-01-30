@@ -29,6 +29,7 @@ if system == 'Darwin':
     extra_compile_args = common_flags + [
         '-DOS_MACOSX',
         '-DLEVELDB_PLATFORM_POSIX',
+        '-std=c++11',
         '-Wno-error=unused-command-line-argument-hard-error-in-future',
     ]
 elif system == 'Linux':
@@ -47,10 +48,10 @@ setup(
         Extension('leveldb',
             sources = [
                 # snappy
-                './snappy/snappy.cc',
-                './snappy/snappy-stubs-internal.cc',
-                './snappy/snappy-sinksource.cc',
-                './snappy/snappy-c.cc',
+                'snappy/snappy.cc',
+                'snappy/snappy-stubs-internal.cc',
+                'snappy/snappy-sinksource.cc',
+                'snappy/snappy-c.cc',
 
                 #leveldb
                 'leveldb/db/builder.cc',
